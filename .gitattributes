@@ -1,2 +1,2 @@
 $ cat .gitattributes
-*.rb linguist-language=JavaScript
+*.js.es6 gitlab-language=javascript
