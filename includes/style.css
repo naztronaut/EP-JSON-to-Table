@@ -1,0 +1,39 @@
+/*
+style.css
+Title: JSON to Table
+Author: Nazmus
+URL: http://nazm.us
+Github: https://github.com/nlinux1/
+
+Custom CSS file for JTable
+*/
+
+#resultTitle{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+#output{
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+#output > td{
+    padding: 3px 15px;
+}
+
+#rowCount{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#myTable{
+    margin-right: 15px;
+}
+
+#btnExport{
+    display: none;
+}
