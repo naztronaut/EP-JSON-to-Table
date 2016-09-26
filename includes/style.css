@@ -36,4 +36,5 @@ Custom CSS file for JTable
 
 #btnExport{
     display: none;
+    margin: 0 15px;
 }

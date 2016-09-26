@@ -4,17 +4,21 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <title>JSON to Table</title>
     <!--jQuery and jQuery UI JS and CSS-->
-    <script src="https://code.jquery.com/jquery-2.2.3.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js" integrity="sha256-DI6NdAhhFRnO2k51mumYeDShet3I8AKCQf/tf7ARNhI=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/black-tie/jquery-ui.css" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="includes/style.css" />
-    <!-- custom JS -->
+    <!--    custom script-->
+    <script src="../nlib/menu.js"></script>
     <script src="includes/script.js"></script>
+    <script type="text/javascript" src="includes/tableExport.js"></script>
+    <script type="text/javascript" src="includes/jquery.base64.js"></script>
 </head>
 
 <body>
@@ -23,7 +27,8 @@
         <div class="row">
             <div class="col-sm-12">
                 <h1>JSON to Table<br /><br /></h1>
-                <h2><small>Enter JSON result</small></h2> </div>
+                <h2><small>Enter JSON result</small></h2>
+            </div>
             <div class="col-sm-12">
                 <form id="myForm" role="form">
                     <div class="form-group">
@@ -34,17 +39,19 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row header">
+        <div class="container-fluid">
+            <div class="row header">
             <div class="col-sm-12">
                 <div id="rowCount"></div>
             </div>
         </div>
         <div class="row header">
+            <button id="btnExport" class="btn btn-primary">Export to Excel</button> <span id="exportErr"></span>
             <div class="col-sm-12">
                 <div id="output"></div>
             </div>
         </div>
+            
     </div>
 </body>
 
