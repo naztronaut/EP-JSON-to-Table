@@ -1,6 +1,9 @@
 # EP-JSON-to-Table
 Quick script to convert JSON output into a table format
 
+##Demo
+View the demo on EasyProgramming: [http://www.easyprogramming.net/playground/jtable.php](http://www.easyprogramming.net/playground/jtable.php)
+
 ##Files
 /includes/styles.css
 
