@@ -11,8 +11,7 @@ Custom JS file for JTable
 $(document).ready(function() {
     $("#myForm").on("submit", function(e) {
         $("#output").html(""); //clear HTML
-        $("#exportErr, #rowCount, #btnExport").hide(); //hide all output elements when submit is clicked in case there is an error
-        //            $("#outputText").html(''); //reset html
+
         var list = $("#text").val(); //.split("\n"); // array item per newline 
 
         jTable(list.toString());
@@ -53,20 +52,6 @@ function jTable(obj) {
 
         //    console.log(obj.length);
         $("#rowCount").text("Number of records:" + objLen).show();
-        $("#btnExport").show();
-
-        $("#btnExport").click(function(e) {
-            //try and catch export error - if no error, export as .xls
-            try {
-                $('#myTable').tableExport({
-                    type: 'excel',
-                    escape: 'false'
-                });
-            } catch (err) {
-                $("#exportErr").html("<span class='text-danger'>Could not export beacuse your input contains invalid characters. Error logged: " + err + "</span>").show();
-            }
-            e.preventDefault();
-        });
 
     } catch (err) {
         $("#output").append("<h3 class='text-danger container'>Could not process request, please check your input and try again!</h3>");
