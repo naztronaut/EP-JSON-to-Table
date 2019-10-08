@@ -15,10 +15,17 @@ index.html
 - Script can be run locally without a web server
 - Upload above files to web server as is
 
-## Questions?
-If you have questions, there are many ways to get in touch with me! 
+## Authors
+* **Nazmus Nasir** - [Nazm.us](https://nazm.us) - Owner of EasyProgramming.net
 
-1. Ask in the comments section of the YouTube video, I am generally very good at responding to questions. 
-2. Ask in the comments section of EasyProgramming.net. Every tutorial comes with a Disqus section to allow a meaninful discussion
-3. If a repository exists on Github, open an issue! 
-4. This should be used as a last resort because I check this email every once in a while and don't guarantee a response, but if you must, you can use the contact form found here: https://www.easyprogramming.net/contact.php
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+# Questions ?
+Have questions? You can reach me through several different channels. You can ask a question in the [issues forum](/../../issues), 
+on [EasyProgramming.net](https://www.easyprogramming.net), or on the vide comments on YouTube. 
+
+
+# Contribute 
+I will accept Pull requests fixing bugs or adding new features after I've vetted them. Feel free to create pull requests! 
